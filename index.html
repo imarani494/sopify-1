@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="bg-white-800">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-space-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+          </div>
+          <div
+            class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+          >
+            <div class="flex flex-shrink-0 items-center">
+              <img
+                class="h-12 w-auto"
+                src="data:image/jpeg;base64,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"
+                alt="Your Company"
+              />
+            </div>
+            <div class="sm:ml-6 sm:block">
+              <div
+                class="flex space-x-4 items-center justify-space-between gap-11"
+              >
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#" style="font-size: 18px" aria-current="page"
+                  >Partenrs</a
+                >
+                <a href="#" style="font-size: 18px">Blog</a>
+                <a href="#" style="font-size: 18px">Docs</a>
+                <a href="#" style="font-size: 18px">Community</a>
+                <a href="#" style="font-size: 18px">Shopify Acad</a>
+                <a href="#" style="font-size: 18px; margin-left: 40px"
+                  >Shopify.com</a
+                >
+                <a href="#" style="font-size: 18px">Log</a>
+                <button
+                  style="
+                    height: 50px;
+                    width: 12vw;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 10px;
+
+                    color: white;
+                    font-size: 18px;
+                    background-color: rgb(21, 13, 13);
+                  "
+                >
+                  Join now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+    </nav>
+    <div style="height: 1px; width: 100vw; background-color: gray"></div>
+    <div
+      style="
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        display: inline;
+        display: flex;
+        margin-top: 15px;
+      "
+    >
+      <div
+        style="
+          width: 50%;
+          height: 500px;
+          align-items: center;
+          gap: 10px;
+          justify-content: center;
+          flex-direction: column;
+          margin-top: 50px;
+          margin: 50px;
+        "
+      >
+        <h1
+          style="
+            align-items: center;
+            font-size: 38px;
+            font-weight: 900;
+            color: black;
+          "
+        >
+          Build your business as
+        </h1>
+        <h1
+          style="
+            align-items: center;
+            font-size: 38px;
+            font-weight: 900;
+            color: black;
+          "
+        >
+          a Shopify Partner
+        </h1>
+        <p
+          style="
+            align-items: center;
+            font-size: 26px;
+            margin-top: 30px;
+            font-weight: 600;
+            color: black;
+
+            background: linear-gradient(#7d868d 80%, hsl(160, 8%, 50%));
+            color: #fff; /* Text color */
+            font-size: 24px;
+          "
+        >
+          Increase your earnings, enhance your skills, and expand your network
+          as part of our thriving global community of agency, app, consulting,
+          and technology partners
+        </p>
+
+        <div
+          style="
+            height: 6vh;
+            width: 10vw;
+
+            display: inline;
+            background-color: white;
+          "
+        >
+          <input
+            style="
+              height: 6vh;
+              margin-top: 70px;
+              border-radius: 9px;
+              width: 30vw;
+              border-radius: grey;
+              border-color: green;
+            "
+            type="text"
+            placeholder="  enter your email addres"
+          />
+          <button
+            style="
+              height: 6vh;
+              background-color: black;
+              width: 8vw;
+              color: white;
+              border-radius: 9px;
+            "
+          >
+            join now
+          </button>
+        </div>
+        <p style="text-decoration: underline; margin-top: 20px">
+          Shopify Privacy Policy
+        </p>
+      </div>
+
+      <img
+        src="https://cdn.shopify.com/shopifycloud/brochure/assets/partners/landing-page/heroes/cheng@desktop-ba324a5dfb72593a52270303d374c05aa048e074a4be8b622f5ec3da0b7acf12.jpg"
+        alt=""
+        height="48%"
+        width="50%"
+      />
+    </div>
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      "
+    >
+      <h1 style="font-size: 20px; font-weight: 500; color: black">
+        Zack Change
+      </h1>
+      <h5 style="font-size: 20px; font-weight: 500; color: black"></h5>Shopify Partner, Referral Candy, Singapore</h5>
+    </div>
+
+    <div
+    style="
+      /* flex-direction: row; */
+      /* justify-content: space-between; */
+      align-items: center;
+      display: inline;
+      margin-inline-start: 20px;
+      display: flex;
+      margin-top: 15px;
+      margin: 20px;
+    "
+  >
+  <div
+  style="
+    width: 50%;
+    /* height: 500px; */
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+    /* margin-top: 50px; */
+    /* margin: 50px; */
+  "
+>
+<img src="https://cdn.shopify.com/shopifycloud/brochure/assets/partners/landing-page/ways-to-partner/ways-to-partner-small-e1144617dcba6109a0789912a629486783cf00eaf49fc11f2298e9666ab96fac.jpg"
+ alt=""
+ height="100%"
+ width="100%"
+ >
+  </div>
+<div style="flex-direction: column;height: 100%;width: 50%;">
+
+    <h1 style="font-size: 34px;font-weight:900;color: black;">Ways to partner with Shopify</h1>
+    <p style="font-size: 24px;font-weight: 600;margin-top: 18px;">Our partners range from global enterprises to startups and entrepreneurs. We’re proud to collaborate with thousands of partners to power the tomorrows of millions of commerce businesses.</p>
+</div>
+
+
+</div>
+
+
+
+  </body>
+</html>
